@@ -17,7 +17,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/samsung/msm8660-common/include
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
-TARGET_CPU_VARIANT := scorpion
+TARGET_CPU_VARIANT := cortex-a8
 TARGET_CPU_SMP := true
 
 # inherit from qcom-common
@@ -53,6 +53,7 @@ RECOVERY_FSTAB_VERSION := 2
 
 # Adreno configuration
 BOARD_EGL_CFG := device/samsung/msm8660-common/configs/egl.cfg
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
